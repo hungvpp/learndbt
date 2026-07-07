@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: wide_world_importers
+    database: gcp-data-eng-499102
+    dataset: wide_world_importers
+    tables: 
+      - name: sales__customers
