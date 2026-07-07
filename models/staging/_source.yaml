@@ -6,3 +6,5 @@ sources:
     dataset: wide_world_importers
     tables: 
       - name: sales__customers
+      - name: sales__orders
+      - name: sales__order_lines

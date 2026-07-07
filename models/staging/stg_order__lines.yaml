@@ -1,0 +1,7 @@
+  models:
+    - name: stg_order__lines
+      columns:
+        - name: order_line_id
+          data_tests:
+            - unique
+            - not_null
