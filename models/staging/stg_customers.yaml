@@ -5,3 +5,7 @@
           data_tests:
             - unique
             - not_null
+            - relationships:
+                arguments:
+                  to: ref('stg_orders')
+                  field: customer_id
