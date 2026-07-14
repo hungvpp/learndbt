@@ -110,3 +110,18 @@ left join {{ref('stg_order__lines')}} as ol
     on o.order_id = ol.order_id
 group by c.customer_id, c.customer_name
 ```
+
+## Create a test for relationship 
+Create a test relationship between stg_customers and stg_oders
+```yml
+  models:
+    - name: stg_customers
+      columns:
+        - name: customer_id
+          data_tests:
+            - unique
+            - not_null
+            - relationships:
+              field: customer_id
+              to: ref('stg_orders')
+```
